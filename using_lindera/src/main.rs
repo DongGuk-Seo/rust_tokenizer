@@ -1,15 +1,21 @@
+use std::io::{stdin};
 use lindera::tokenizer::Tokenizer;
 use lindera::LinderaResult;
 
+
 fn main() -> LinderaResult<()> {
+    let mut word = String::new();
+
+    stdin().read_line(&mut word).unwrap();
+
     // create tokenizer
     let tokenizer = Tokenizer::new()?;
 
     // tokenize the text
-    let tokens = tokenizer.tokenize("식사는스테이크가어떠신가요?")?;
+    let tokens = tokenizer.tokenize(&word)?;
 
     // output the tokens
-    for token in tokens {
+    for token in tokens[:-1] {
         println!("{}", token.text);
     }
 

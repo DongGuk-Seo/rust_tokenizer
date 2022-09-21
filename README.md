@@ -1,5 +1,7 @@
 ## Using tokenizer-lindera with rust
 
+Only for Korean
+
 ### Codes
 ```rust
 use lindera::tokenizer::Tokenizer;
@@ -25,11 +27,6 @@ fn main() -> LinderaResult<()> {
 ### how to run
 ```shell script
 % cargo run
-```
-
-### choice features
-```shell script
-% cargo run --features=ko-dic --example=basic_example
 ```
 
 ### check your result
