@@ -1,6 +1,6 @@
 ## Using tokenizer-lindera with rust
 
-Only for Korean
+Available tokenizer with Korean
 
 ### Codes
 ```rust

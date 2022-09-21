@@ -15,7 +15,7 @@ fn main() -> LinderaResult<()> {
     let tokens = tokenizer.tokenize(&word)?;
 
     // output the tokens
-    for token in tokens[:-1] {
+    for token in tokens {
         println!("{}", token.text);
     }
 
